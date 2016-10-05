@@ -12,11 +12,22 @@
 </head>
 
 <body>
-    <div data-role="page">
-        <div data-role="header" data-position="fixed">
+    <div data-role="page" id="cart" class="drawer drawer--left">
+        <header data-role="header" data-position="fixed" data-tap-toggle="false" role="banner">
+            <button type="button" class="drawer-toggle drawer-hamburger">
+                <span class="sr-only">toggle navigation</span>
+                <span class="drawer-hamburger-icon"></span>
+            </button>
+            <nav class="drawer-nav" role="navigation">
+                <ul class="drawer-menu">
+                    <li><a class="drawer-brand" href="#">Brand</a></li>
+                    <li><a class="drawer-menu-item" href="#">Nav1</a></li>
+                    <li><a class="drawer-menu-item" href="#">Nav2</a></li>
+                </ul>
+            </nav>
             <h1>Dill Delivery</h1>
-        </div>
-        <div data-role="content">
+        </header>
+        <main data-role="content" role="main">
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -142,8 +153,8 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-        <div data-role="footer" data-position="fixed">
+        </main>
+        <footer data-role="footer" data-position="fixed" data-tap-toggle="false">
             <div data-role="navbar">
                 <ul>
                     <li>
@@ -159,11 +170,11 @@
                         <a href="news.html">News</a>
                     </li>
                     <li>
-                        <a href="mypage.html">MyPage</a>
+                        <a href="mypage.html">Dill</a>
                     </li>
                 </ul>
             </div>
-        </div>
+        </footer>
     </div>
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>

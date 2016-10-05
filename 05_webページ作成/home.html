@@ -6,43 +6,46 @@
     <title>Dill Delivery</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
-    <link rel="stylesheet" href="css/dill.css">
+    <link rel="stylesheet" href="css/dill.min.css">
+    <link rel="stylesheet" href="css/drawer.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div data-role="page">
-        <div data-role="header" data-position="fixed">
+    <div data-role="page" id="home" class="drawer drawer--left">
+        <header data-role="header" data-position="fixed" data-tap-toggle="false" role="banner">
+            <button type="button" class="drawer-toggle drawer-hamburger">
+                <span class="sr-only">toggle navigation</span>
+                <span class="drawer-hamburger-icon"></span>
+            </button>
+            <nav class="drawer-nav" role="navigation">
+                <ul class="drawer-menu">
+                    <li><a class="drawer-brand" href="#">Brand</a></li>
+                    <li><a class="drawer-menu-item" href="#">Nav1</a></li>
+                    <li><a class="drawer-menu-item" href="#">Nav2</a></li>
+                </ul>
+            </nav>
             <h1>Dill Delivery</h1>
-        </div>
-        <div data-role="content">
-            <div class="col-xs-12">
-                <div><img src="images/home_GwCke.jpg" alt=""></div>
-                <div>
-                    <h1>今にまったくすからいるが間違いないと望むところも、話しぶりのものでべく。</h1>
-                </div>
+        </header>
+        <main data-role="content" role="main">
+            <div class="jumbotron" id="main-top">
+                <h1>Dill Delivery</h1>
             </div>
-            <div class="col-xs-12">
-                <div><img src="images/home_NKBRA.jpg" alt=""></div>
-                <div>
-                    <h1>諸国にいえる当たりがない食器は、いえよまではない、無理あり交流楽しみ刺身からなくてたあるで。</h1>
-                </div>
+            <div class="jumbotron" id="main-about">
+                <h1>時をわすれる食</h1>
+                <p>パーティやちょっとした贅沢のための料理、素材にこだわった料理を提供します。</p>
             </div>
-            <div class="col-xs-12">
-                <div><img src="images/home_f9SLm.jpg" alt=""></div>
-                <div>
-                    <h1>当たり価しよて米人を来るものがよよう、これの心に直接料理喜ぶたため、わたしの目から食うたためにこれは行脚ひびきありと見失うておい。</h1>
-                </div>
+            <div class="jumbotron" id="main-stuff">
+                <h1>本物の食材を愛する方へ</h1>
+                <p>旬にこだわった国産野菜を中心に、厳選素材を使用しております。</p>
             </div>
-            <div class="col-xs-12">
-                <div><img src="images/home_PWM6h.jpg" alt=""></div>
-                <div>
-                    <h1>それだけに、つぶさにものに開かでと吟味回っ、経験楽しみていることが、ヨーロッパや日本の諸準備あろあるようない。</h1>
-                </div>
+            <div class="jumbotron" id="main-health">
+                <h1>幸せをもたらす健康</h1>
+                <p>菜食を中心とした、健康的な食事を提案させていただきます。</p>
             </div>
-        </div>
-        <div data-role="footer" data-position="fixed">
+        </main>
+        <footer data-role="footer" data-position="fixed" data-tap-toggle="false">
             <div data-role="navbar">
                 <ul>
                     <li>
@@ -58,15 +61,18 @@
                         <a href="news.html">News</a>
                     </li>
                     <li>
-                        <a href="mypage.html">MyPage</a>
+                        <a href="mypage.html">Dill</a>
                     </li>
                 </ul>
             </div>
-        </div>
+        </footer>
     </div>
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/iscroll.min.js"></script>
+    <script src="js/drawer.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

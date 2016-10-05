@@ -12,66 +12,90 @@
 </head>
 
 <body>
-    <div data-role="page">
-        <div data-role="header" data-position="fixed">
+    <div data-role="page" id="menu" class="drawer drawer--left">
+        <header data-role="header" data-position="fixed" data-tap-toggle="false" role="banner">
+            <button type="button" class="drawer-toggle drawer-hamburger">
+                <span class="sr-only">toggle navigation</span>
+                <span class="drawer-hamburger-icon"></span>
+            </button>
+            <nav class="drawer-nav" role="navigation">
+                <ul class="drawer-menu">
+                    <li><a class="drawer-brand" href="#">Brand</a></li>
+                    <li><a class="drawer-menu-item" href="#">Nav1</a></li>
+                    <li><a class="drawer-menu-item" href="#">Nav2</a></li>
+                </ul>
+            </nav>
             <h1>Dill Delivery</h1>
-        </div>
-        <div data-role="content">
-            <div>
-                <div class="col-xs-12"></div>
-            </div>
+        </header>
+        <main data-role="content" role="main">
             <div>
                 <div class="col-xs-12">
-                    <div>
-                        <a href="menu/detail01.html"><img src="images/menulg_yGug9.jpg" alt=""></a>
-                    </div>
-                    <div>30種の野菜のニース風サラダ</div>
+                    <a href="detail.html">
+                        <figure class="fig-dishname">
+                            <img src="images/menulg_yGug9.jpg" alt="">
+                            <figcaption class="cap-dishname">30種の野菜のニース風サラダ</figcaption>
+                        </figure>
+                    </a>
                 </div>
                 <div class="col-xs-6">
-                    <div>
-                        <a href="menu/detail01.html"><img src="images/menu_4vZEw.jpg" alt=""></a>
-                    </div>
-                    <div>ズッキーニと人参のタルト</div>
+                    <a href="detail.html">
+                        <figure class="fig-dishname">
+                            <img src="images/menu_4vZEw.jpg" alt="">
+                            <figcaption class="cap-dishname">ズッキーニと人参のタルト</figcaption>
+                        </figure>
+                    </a>
                 </div>
                 <div class="col-xs-6">
-                    <div>
-                        <a href="menu/detail01.html"><img src="images/menu_njxCa.jpg" alt=""></a>
-                    </div>
-                    <div>ピーカンナッツとリンゴのサラダ（自家製アップルサイダービネガーのドレッシング）</div>
+                    <a href="detail.html">
+                        <figure class="fig-dishname">
+                            <img src="images/menu_njxCa.jpg" alt="">
+                            <figcaption class="cap-dishname">ピーカンナッツとリンゴのサラダ（自家製アップルサイダービネガーのドレッシング）</figcaption>
+                        </figure>
+                    </a>
                 </div>
                 <div class="col-xs-6">
-                    <div>
-                        <a href="menu/detail01.html"><img src="images/menu_gmgrz.jpg" alt=""></a>
-                    </div>
-                    <div>フランス産シェーブルチーズのスタッフドトマト</div>
+                    <a href="detail.html">
+                        <figure class="fig-dishname">
+                            <img src="images/menu_gmgrz.jpg" alt="">
+                            <figcaption class="cap-dishname">フランス産シェーブルチーズのスタッフドトマト</figcaption>
+                        </figure>
+                    </a>
                 </div>
                 <div class="col-xs-6">
-                    <div>
-                        <a href="menu/detail01.html"><img src="images/menu_HLCQW.jpg" alt=""></a>
-                    </div>
-                    <div>黒樺牛のカルパッチョ</div>
+                    <a href="detail.html">
+                        <figure class="fig-dishname">
+                            <img src="images/menu_HLCQW.jpg" alt="">
+                            <figcaption class="cap-dishname">黒樺牛のカルパッチョ</figcaption>
+                        </figure>
+                    </a>
                 </div>
                 <div class="col-xs-6">
-                    <div>
-                        <a href="menu/detail01.html"><img src="images/menu_hPsmp.jpg" alt=""></a>
-                    </div>
-                    <div>七色野菜の生春巻き</div>
+                    <a href="detail.html">
+                        <figure class="fig-dishname">
+                            <img src="images/menu_hPsmp.jpg" alt="">
+                            <figcaption class="cap-dishname">七色野菜の生春巻き</figcaption>
+                        </figure>
+                    </a>
                 </div>
                 <div class="col-xs-6">
-                    <div>
-                        <a href="menu/detail01.html"><img src="images/menu_LeHJi.jpg" alt=""></a>
-                    </div>
-                    <div>蒸し鶏とほうれん草のパワーサラダ</div>
+                    <a href="detail.html">
+                        <figure class="fig-dishname">
+                            <img src="images/menu_LeHJi.jpg" alt="">
+                            <figcaption class="cap-dishname">蒸し鶏とほうれん草のパワーサラダ</figcaption>
+                        </figure>
+                    </a>
                 </div>
                 <div class="col-xs-6">
-                    <div>
-                        <a href="menu/detail01.html"><img src="images/menu_elAGm.jpg" alt=""></a>
-                    </div>
-                    <div>北海道産氷詰めアスパラ、スモークサーモンとクリームチーズの冷前菜</div>
+                    <a href="detail.html">
+                        <figure class="fig-dishname">
+                            <img src="images/menu_elAGm.jpg" alt="">
+                            <figcaption class="cap-dishname">北海道産氷詰めアスパラ、スモークサーモンとクリームチーズの冷前菜</figcaption>
+                        </figure>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div data-role="footer" data-position="fixed">
+        </main>
+        <footer data-role="footer" data-position="fixed" data-tap-toggle="false">
             <div data-role="navbar">
                 <ul>
                     <li>
@@ -87,11 +111,11 @@
                         <a href="news.html">News</a>
                     </li>
                     <li>
-                        <a href="mypage.html">MyPage</a>
+                        <a href="mypage.html">Dill</a>
                     </li>
                 </ul>
             </div>
-        </div>
+        </footer>
     </div>
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
