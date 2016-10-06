@@ -5,26 +5,44 @@
     <meta charset="UTF-8">
     <title>Dill Delivery | Shopping Cart</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
-    <link rel="stylesheet" href="css/dill.css">
+    <link rel="stylesheet" href="css/dill.min.css">
+    <link rel="stylesheet" href="css/drawer.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <div data-role="page" id="cart" class="drawer drawer--left">
-        <header data-role="header" data-position="fixed" data-tap-toggle="false" role="banner">
+<body class="drawer drawer--left">
+    <div data-role="page" id="cart">
+        <nav class="drawer-nav">
+            <ul class="drawer-menu" data-role="listview" data-fileter="true">
+                <li>　</li>
+                <li><a href="home.html">ホーム</a></li>
+                <li><a href="cart.html">買い物かご</a></li>
+                <li><a href="menu.html">メニュー</a></li>
+                <li><a href="news.html">お知らせ</a></li>
+                <li>マイページ</li>
+                <li><a href="user.html">ユーザー情報</a></li>
+                <li><a href="coupon.html">クーポン</a></li>
+                <li>Help</li>
+                <li><a href="help_faq.html">よくあるご質問</a></li>
+                <li><a href="help_allergy.html">カロリー・アレルギー</a></li>
+                <li><a href="help_use.html">ご利用方法</a></li>
+                <li><a href="help_inquiry.html">お問い合わせ</a></li>
+                <li>About</li>
+                <li><a href="about_privacy.html">個人情報保護方針 </a></li>
+                <li><a href="about_policy.html">サイトポリシー</a></li>
+                <li><a href="about_law.html">特定商取引法に基づく表示</a></li>
+                <li><a href="about_corporate.html">コーポレート情報</a></li>
+                <li><a href="about_rule.html">ご利用規約</a></li>
+            </ul>
+        </nav>
+        <header data-role="header" data-position="fixed" data-tap-toggle="false">
             <button type="button" class="drawer-toggle drawer-hamburger">
                 <span class="sr-only">toggle navigation</span>
-                <span class="drawer-hamburger-icon"></span>
+                <span class="drawer-hamburger-icon">　　　</span>
             </button>
-            <nav class="drawer-nav" role="navigation">
-                <ul class="drawer-menu">
-                    <li><a class="drawer-brand" href="#">Brand</a></li>
-                    <li><a class="drawer-menu-item" href="#">Nav1</a></li>
-                    <li><a class="drawer-menu-item" href="#">Nav2</a></li>
-                </ul>
-            </nav>
             <h1>Dill Delivery</h1>
         </header>
         <main data-role="content" role="main">
@@ -170,7 +188,7 @@
                         <a href="news.html">News</a>
                     </li>
                     <li>
-                        <a href="mypage.html">Dill</a>
+                        <a href="user.html">Dill</a>
                     </li>
                 </ul>
             </div>
@@ -178,7 +196,10 @@
     </div>
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/iscroll.min.js"></script>
+    <script src="js/drawer.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
